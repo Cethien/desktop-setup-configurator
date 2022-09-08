@@ -1,3 +1,3 @@
-# Windows Setup Config Gen
+# DSC - Desktop Setup Configurator
 
 makes installing stuff complex
