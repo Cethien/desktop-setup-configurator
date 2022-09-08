@@ -1,3 +1,3 @@
-# DSC - Desktop Setup Configurator
+# :desktop_computer: DSC - Desktop Setup Configurator
 
 makes installing stuff complex

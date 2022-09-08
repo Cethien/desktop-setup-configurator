@@ -1,18 +1,9 @@
-using System.Text.Json.Serialization;
-
 namespace DSC.Domain;
 
-public record ShellCommand(string FileName, params string[] Arguments)
+public record ShellCommand
 {
-    [JsonIgnore]
-    public string FileName { get; set; } = FileName;
-
-    [JsonIgnore]
-    public string[] Arguments { get; set; } = Arguments;
-
-    [JsonPropertyName("profiles")]
-    public IEnumerable<string> InstallProfiles { get; set; } = Enumerable.Empty<string>();
-
-    [JsonPropertyName("command")]
-    public string Command => FileName + " " + string.Join(" ", Arguments);
+    public int CommandId { get; set; }
+    public string? Command { get; set; }
+    public InstallProfile? InstallProfile { get; set; }
+    public Stage? Stage { get; set; }
 }
