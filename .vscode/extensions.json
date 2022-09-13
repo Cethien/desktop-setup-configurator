@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "golang.Go"
+        "golang.go",
+        "mtxr.sqltools"
     ]
 }

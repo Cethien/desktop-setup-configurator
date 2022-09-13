@@ -2,6 +2,7 @@
 # https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
 #
 # Binaries for programs and plugins
+src/dsc
 *.exe
 *.exe~
 *.dll
@@ -20,6 +21,9 @@
 # Go workspace file
 go.work
 
-#databases
+# databases
 *.db
 *.sqlite3
+
+# json output
+*.json
