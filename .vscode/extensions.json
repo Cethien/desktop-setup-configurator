@@ -1,6 +1,6 @@
 {
     "recommendations": [
         "golang.go",
-        "mtxr.sqltools"
+        "qwtel.sqlite-viewer"
     ]
 }
