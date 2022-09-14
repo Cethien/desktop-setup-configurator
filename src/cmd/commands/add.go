@@ -25,7 +25,7 @@ var addCmd = &cobra.Command{
 		db, _ := data.OpenDatabase()
 
 		//get command text
-		commandText = args[0]
+		commandText, _ = cmd.Flags().GetString("command")
 
 		//create command
 		command := &data.Command{
@@ -40,4 +40,9 @@ var addCmd = &cobra.Command{
 	},
 }
 
-func init() {}
+func init() {
+	addCmd.Flags().StringVarP(&commandText, "command", "c", "", "the command you want to save")
+	if err := addCmd.MarkFlagRequired("command"); err != nil {
+		log.Fatal(err)
+	}
+}
