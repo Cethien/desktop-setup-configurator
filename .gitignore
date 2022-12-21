@@ -24,6 +24,3 @@ go.work
 # databases
 *.db
 *.sqlite3
-
-# json output
-*.json
