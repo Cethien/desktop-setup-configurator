@@ -20,8 +20,11 @@
             "args": [
                 "publish",
                 "${workspaceFolder}/src/DesktopSetupConfigurator/DesktopSetupConfigurator.csproj",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
+                "-o",
+                "${workspaceFolder}/dist",
+                "--self-contained",
+                "-c",
+                "PublishRelease"
             ],
             "problemMatcher": "$msCompile"
         },
